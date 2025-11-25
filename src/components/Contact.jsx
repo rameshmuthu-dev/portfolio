@@ -54,11 +54,14 @@ const Contact = () => {
             <h3 className="text-lg font-semibold">Email</h3>
             <p className="text-gray-600 text-sm ">rameshmuthu01996@gmail.com</p>
             <a
-              href="mailto:rameshmuthu01996@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rameshmuthu01996@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm mt-1 text-blue-500 hover:underline"
             >
               Write me →
             </a>
+
           </div>
 
           <div className="p-6 rounded-2xl bg-white shadow hover:shadow-md transition flex flex-col flex-1 text-center">

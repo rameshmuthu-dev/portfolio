@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900 text-center py-10 px-6 mt-20">
-      
+
       {/* Name */}
       <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
         Ramesh Muthu
@@ -21,7 +21,7 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className="flex justify-center gap-6 mt-6 text-xl">
-        
+
         {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/rameshmuthu-dev/"
@@ -44,7 +44,9 @@ const Footer = () => {
 
         {/* Email */}
         <a
-          href="mailto:rameshmuthu01996@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=rameshmuthu01996@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="p-3 rounded-xl bg-white dark:bg-gray-800 shadow hover:shadow-lg transition"
         >
           <MdEmail className="text-red-500 text-2xl" />
