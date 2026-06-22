@@ -48,8 +48,8 @@ const Hero = () => {
         </p>
         <p className="mt-3 text-base text-gray-600 dark:text-gray-400 max-w-md mx-auto md:mx-0">
           Full Stack Developer with hands-on experience building scalable web
-          applications using the MERN stack[cite: 6]. Skilled in developing REST APIs,
-          managing global state, and deploying web solutions[cite: 6, 7].
+          applications using the MERN stack. Skilled in developing REST APIs,
+          managing global state, and deploying web solutions.
         </p>
 
         <div className="mt-6 flex items-center gap-4 justify-center md:justify-start">
