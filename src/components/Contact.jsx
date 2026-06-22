@@ -81,7 +81,7 @@ const Contact = () => {
           <div className="p-6 rounded-2xl bg-white shadow hover:shadow-md transition flex flex-col flex-1 text-center">
             <div className="text-3xl mb-2">🔗</div>
             <h3 className="text-lg font-semibold">LinkedIn</h3>
-            <p className="text-gray-600 text-sm">Ramesh Muthu</p>
+            <p className="text-gray-600 text-sm">Ramesh M</p>
             <a
               href="https://www.linkedin.com/in/rameshmuthu-dev/"
               target="_blank"
