@@ -12,6 +12,8 @@ const About = () => {
               src={aboutimg}
               className="w-full h-full object-cover opacity-80"
               alt="Ramesh M Profile"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

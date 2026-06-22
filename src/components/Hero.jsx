@@ -20,6 +20,8 @@ const Hero = () => {
               src={profileimg}
               alt="Ramesh M"
               className="w-full h-full object-cover"
+              loading="eager"
+              fetchpriority="high"
             />
           </div>
         </div>
@@ -47,7 +49,7 @@ const Hero = () => {
           </a>
           <a
             href="#contact"
-            className="px-5 py-2 rounded-full bg-black text-white dark:bg-white dark:text-black text-sm hover:opacity-80 transition shadow-sm"
+            className="px-5 py-2 rounded-full bg-black text-white hover:opacity-80 dark:bg-white dark:text-black text-sm transition duration-300 shadow-sm"
           >
             Contact Info
           </a>
