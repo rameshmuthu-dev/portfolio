@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import resumePDF from "../assets/Ramesh_Resume.pdf";
 import profileimg from "../assets/myprofile.png";
 
 const Hero = () => {
+  const [isImageLoading, setIsImageLoading] = useState(true);
+
   return (
     <section
       id="home"
@@ -11,17 +13,28 @@ const Hero = () => {
     >
       <div className="flex-1 flex justify-center">
         <div className="relative w-60 h-60 md:w-72 md:h-72">
+          
           <div className="absolute inset-0 z-0 flex items-center justify-center">
             <div className="w-56 h-56 md:w-64 md:h-64 rounded-full bg-gray-300 dark:bg-gray-700 opacity-40 animate-pulse"></div>
           </div>
 
-          <div className="relative w-full h-full rounded-full overflow-hidden ring-4 ring-gray-100 dark:ring-gray-800 flex items-center justify-center">
+          <div className="relative w-full h-full rounded-full overflow-hidden ring-4 ring-gray-100 dark:ring-gray-800 flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+            
+            {isImageLoading && (
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-800 rounded-full z-10">
+                <div className="w-8 h-8 border-4 border-black dark:border-white border-t-transparent rounded-full animate-spin"></div>
+              </div>
+            )}
+
             <img
               src={profileimg}
               alt="Ramesh M"
-              className="w-full h-full object-cover"
+              className={`w-full h-full object-cover transition-opacity duration-500 ${
+                isImageLoading ? "opacity-0" : "opacity-100"
+              }`}
               loading="eager"
               fetchpriority="high"
+              onLoad={() => setIsImageLoading(false)}
             />
           </div>
         </div>
@@ -35,8 +48,8 @@ const Hero = () => {
         </p>
         <p className="mt-3 text-base text-gray-600 dark:text-gray-400 max-w-md mx-auto md:mx-0">
           Full Stack Developer with hands-on experience building scalable web
-          applications using the MERN stack. Skilled in developing REST APIs,
-          managing global state, and deploying web solutions.
+          applications using the MERN stack[cite: 6]. Skilled in developing REST APIs,
+          managing global state, and deploying web solutions[cite: 6, 7].
         </p>
 
         <div className="mt-6 flex items-center gap-4 justify-center md:justify-start">
